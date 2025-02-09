@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 export default function SeeMore() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>This is the See More Page</Text>
+      <Text style={styles.text}>This is the See More Page.</Text>
     </View>
   );
 }
