@@ -58,7 +58,7 @@ const screenWidth = Dimensions.get('window').width;
 
 export default function ProductDetailScreen({ scrollToReviews }) {
   const [selectedImage, setSelectedImage] = useState(data[0].image);
-  const [selectedColor, setSelectedColor] = useState(colors[0]); // Default to first color
+  const [selectedColor, setSelectedColor] = useState(colors[0]); 
 
   const handleColorSelection = (color) => {
     setSelectedColor(color);

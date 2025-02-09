@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert, Modal, TextInput } from 'react-native';
-import { Rating } from 'react-native-ratings'; // Or your preferred rating library
+import { Rating } from 'react-native-ratings'; 
 
 const reviews = [
   {
@@ -46,10 +46,7 @@ export default function Review() {
   
   const handleReviewSubmit = () => {
     if (!reviewData.name || !reviewData.email || !reviewData.details || reviewData.rating === 0) {
-      // Alert.alert('Error', 'Please fill in all fields and provide a rating.');
-      console.log("Before Alert"); 
-Alert.alert('Error', 'Please fill in all fields and provide a rating.');
-console.log("After Alert");
+      Alert.alert('Error', 'Please fill in all fields and provide a rating.');
       return;
     }
     setModalVisible(false);

@@ -12,7 +12,6 @@ import {
   ScrollView,
 } from 'react-native';
 
-// Enable LayoutAnimation for Android
 if (Platform.OS === 'android') {
   UIManager.setLayoutAnimationEnabledExperimental &&
     UIManager.setLayoutAnimationEnabledExperimental(true);

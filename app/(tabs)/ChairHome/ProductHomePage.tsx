@@ -8,7 +8,6 @@ import FrequentlyBought from './FrequentlyBought';
 export default function ProductHomePage() {
   const flatListRef  = useRef(null); 
 
-  // Reference for the review section position
   const reviewSectionRef = useRef(null);
 
   const scrollToReviews = () => {
